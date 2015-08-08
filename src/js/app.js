@@ -1,3 +1,1 @@
-'use strict';
-var test = require('./test');
-module.exports = test;
+// Main js file.
