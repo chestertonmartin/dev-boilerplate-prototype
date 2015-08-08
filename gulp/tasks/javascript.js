@@ -56,7 +56,10 @@ gulp.task('javascript:hint', function() {
 });
 
 gulp.task('javascript:hint:watch', function() {
-    gulp.watch('./src/js/**/*.js', ['javascript:hint']);
+    gulp.watch([
+        'src/js/**/*.js',
+        '!src/js/modernizr/**/*'
+    ], ['javascript:hint']);
 });
 
 gulp.task('javascript:modernizr', function() {

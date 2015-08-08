@@ -6,5 +6,5 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('fonts:watch', function() {
-    gulp.watch('./src/fonts/**/*', ['fonts']);
+    gulp.watch('src/fonts/**/*', ['fonts']);
 });

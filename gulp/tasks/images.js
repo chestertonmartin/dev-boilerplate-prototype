@@ -6,5 +6,5 @@ gulp.task('images', function() {
 });
 
 gulp.task('images:watch', function() {
-    gulp.watch('./src/img/**/*', ['images']);
+    gulp.watch('src/img/**/*', ['images']);
 });
