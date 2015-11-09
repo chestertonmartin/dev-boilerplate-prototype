@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     handlebars = require('gulp-compile-handlebars'),
+    layouts = require('handlebars-layouts'),
     rename = require('gulp-rename');
 
 var options = {
@@ -7,6 +8,8 @@ var options = {
     batch : ['./src/markup/partials'],
     helpers: {}
 };
+
+handlebars.Handlebars.registerHelper(layouts(handlebars.Handlebars));
 
 gulp.task('handlebars', function() {
     return gulp.src('./src/markup/templates/*.hbs')
