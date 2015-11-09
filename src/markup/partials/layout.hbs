@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>{{#block "title"}}{{/block}}</title>
+        <meta name="description" content="{{#block "description"}}{{/block}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta property="og:title" content="{{#block "og:title"}}{{/block}}" />
+        <meta property="og:description" content="{{#block "og:description"}}{{/block}}" />
+        <meta property="og:image" content="{{#block "og:image"}}{{/block}}" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/modernizr.js"></script>
